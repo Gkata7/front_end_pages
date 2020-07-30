@@ -49,6 +49,22 @@ p {
   background: #333;
   color: #fff;
 }
+.bg-light {
+  background: #f4f4f4;
+  color: #333;
+}
+.bg-primary {
+  background: #f7c08a;
+  color: #333;
+}
+.clr {
+  clear: both;
+}
+/* Padding */
+.py-1 { padding: 10px 0; }
+.py-2 { padding: 20px 0; }
+.py-3 { padding: 30px 0; }
+/************************ Home Page Portion **********************/
 /* Navbar */
 #navbar {
   background: #333;
@@ -116,4 +132,93 @@ p {
 }
 #home-info .home-content p {
   padding-top: 25px;
+}
+/* Features */
+.box {
+  float: left;
+  width: 33%;
+  padding: 50px;
+  text-align: center;
+}
+.box i {
+  margin-bottom: 10px;
+}
+/************************** About Page Portion *****************/
+/* About Info */
+#about-info h1 {
+  font-size: 40px;
+  padding-top: 10px;
+}
+#about-info .info-right {
+  float: right;
+  width: 50%;
+  min-height: 10%;
+}
+#about-info .info-right img {
+  display: block;
+  width: 70%;
+  margin: auto;
+  border-radius: 30px;
+}
+#about-info .info-left {
+  float: left;
+  width: 50%;
+  min-height: 10%;
+}
+/* Testimonials */
+#testimonials {
+  height: 600px;
+  background: url('../images/building.png') no-repeat center center/cover;
+  padding-top: 50px;
+}
+#testimonials h2 {
+  color: #fff;
+  text-align: center;
+  padding-bottom: 40px;
+  font-size: 28px;
+}
+#testimonials .testimonial {
+  padding: 20px;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  opacity: 0.8;
+}
+#testimonials .testimonial img {
+  width: 100px;
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+/************************ Contact Page Portion ************************/
+#contact-form .form-group {
+  margin-bottom: 20px;
+}
+#contact-form h1 {
+  font-size: 40px;
+  padding-top: 10px;
+}
+#contact-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+#contact-form input, 
+#contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px #ddd solid;
+}
+#contact-form textarea {
+  height: 200px;
+}
+#contact-form input:focus, 
+#contact-form textarea:focus {
+  outline: none;
+  border-color: #f7c08a;
+}
+/* Footer */
+#main-footer {
+  text-align: center;
+  background: #444;
+  color: white;
+  padding: 20px;
 }

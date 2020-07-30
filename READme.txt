@@ -1,3 +1,3 @@
-Here we have a real estate webpage using HTML, CSS.
+Here we have a few front end webpages made with HTML, CSS, JavaScript
 
-Link down below:
+Links down below:
