@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/utilities.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>Welcome to the Finance Club</title>
 </head>
 <body>
@@ -13,7 +13,7 @@
   <header class="container">
     <div id="navbar" class="navbar">
       <h1 class="logo">
-        <span class="text-primary"><i class="fas fa-money-check"></i>Finance</span> Partners
+        <span class="text-primary"><i class="fas fa-money-check"></i> Finance</span> Partners
       </h1>
       <nav>
         <ul>
@@ -28,10 +28,10 @@
     <div class="content">
       <h1>Sky Is The Limit</h1>
       <p>We provide world class financial assistance</p>
-      <a class="btn btn-primary" href ="#about"><i class="fas fa-chevron-right">Read More</i></a>
+      <a class="btn btn-primary" href ="#about"><i class="fas fa-chevron-circle-right"> Read More</i></a>
     </div>
   </header>
-<!------------------- Icon Section ------------------------------------>
+<!------------------- About:Icon Section ------------------------------------>
   <main>
     <section id="about" class="icons bg-light">
       <div class="flex-items">
@@ -64,7 +64,139 @@
         </div>
       </div>
     </section>
+  <!--------------------- About:Solutions Section --------------------->
+    <section class="solutions flex-columns">
+      <div class="row">
+        <div class="column">
+          <div class="column-1">
+            <img src="images/people/people.png" alt="Team photo">
+          </div>
+        </div>
+        <div class="column">
+          <div class="column-2 bg-primary">
+            <h4>What you are looking for</h4>
+            <h2>We provide bespoke solutions</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis ab dolores
+              esse cum! Id impedit temporibus dolorem aspernatur facere eligendi, quibusdam 
+              optio perferendis voluptate vel doloremque, sapiente aliquid magnam minima!
+              </p>
+              <a href ="#" class="btn btn-outline"><i class="fas fa-chevron"></i>Read More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!------------------- Cases Section -------------------->
+    <section id="cases" class="cases flex-grid section-padding">
+      <header class="section-header">
+        <h4>This is what we do</h4>
+        <h2>Business Cases</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum, optio!</p>
+      </header>
+      <div class="row">
+        <div class="column">
+          <img src="images/cases/cases1.png" alt="case 1">
+          <img src="images/cases/cases2.png" alt="case 2">
+        </div>
+        <div class="column">
+          <img src="images/cases/cases3.png" alt="case 3">
+          <img src="images/cases/cases4.png" alt="case 4">
+        </div>
+        <div class="column">
+          <img src="images/cases/cases5.png" alt="case 5">
+          <img src="images/cases/cases6.png" alt="case 6">
+        </div>
+        <div class="column">
+          <img src="images/cases/cases7.png" alt="case 7">
+          <img src="images/cases/cases8.png" alt="case 8">
+        </div>
+      </div>
+    </section>
+    <!------------------- Blog Section ----------------------------->
+    <section id ="blog" class="blog flex-columns flex-reverse">
+      <div class="row">
+        <div class="column">
+          <div class="column-1">
+            <img src="images/blog/blog.png" alt="Nice photo of Coffee and Books">
+          </div>
+        </div>
+        <div class="column">
+          <div class="column-2 bg-secondary">
+            <h4>June 21 2020</h4>
+            <h2>Blog Post One</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis ab dolores
+              esse cum! Id impedit temporibus dolorem aspernatur facere eligendi, quibusdam 
+              optio perferendis voluptate vel doloremque, sapiente aliquid magnam minima!
+              </p>
+              <a href ="blog.html" class="btn btn-outline"><i class="fas fa-chevron"></i>Read Our Blog</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--------------------- Team --------------------------->
+    <section id="team" class="team section-padding">
+      <header class="section-header">
+        <h4>Who We Are</h4>
+        <h2>Our Professional Team</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum, optio!</p>
+      </header>
+      <div class="flex-items">
+        <div>
+          <img src="images/people/person1.png" alt="President">
+          <h4>Jeremy Lin</h4>
+          <p>President</p>
+        </div>
+        <div>
+          <img src="images/people/person2.png" alt="Vice-President">
+          <h4>Michelle Adams</h4>
+          <p>Vice-President</p>
+        </div>
+        <div>
+          <img src="images/people/person3.png" alt="Director of Marketing">
+          <h4>Christian McCaffrey</h4>
+          <p>Director of Marketing</p>
+        </div>
+      </div>
+    </section>
+    <!------------------------- Contact Section ----------------------->
+    <section id="contact" class="contact flex-columns">
+      <div class="row">
+        <div class="column">
+          <div class="column-1">
+            <img src="images/home/contact.png" alt="">
+          </div>
+        </div>
+        <div class="column">
+          <div class="column-2 bg-light">
+            <h2>Request Call Back</h2>
+            <form action="" class="callback-form">
+              <div class="form-control">
+                <label for="name"></label>
+                <input type="text" name="name" id="name" placeholder="Enter Name"></input>
+              </div>
+              <div class="form-control">
+                <label for="email"></label>
+                <input type="email" name="email" id="email" placeholder="Enter Email"></input>
+              </div>
+              <div class="form-control">
+                <label for="phone"></label>
+                <input type="text" name="phone" id="phone" placeholder="Enter Phone Number"></input>
+              </div>
+              <input type="submit" value="Send" id="submit" class="btn">
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
-
+  <!------------------- Footer ------------------------------>
+  <footer class="footer bg-dark">
+    <div class="social">
+      <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+      <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+      <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+      <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+    </div>
+    <p>Copyright &copy; 2020 - Finance Partners</p>
+  </footer>
 </body>
 </html>
