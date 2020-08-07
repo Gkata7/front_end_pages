@@ -26,6 +26,7 @@ p {
 }
 .primary-text {
   color: #2f4f4f;
+  font-weight: bold;
 }
 .btn {
   display: inline-block;
@@ -191,7 +192,7 @@ p {
   padding: 20px;
   margin-bottom: 40px;
   border-radius: 10px;
-  /* opacity: 0.8; */
+  opacity: 0.9;
 }
 #testimonials .testimonial img {
   width: 100px;
@@ -201,12 +202,20 @@ p {
 }
 /************************ Contact.html ********************************/
 /************************ Contact Page Portion ************************/
+#contact-info {
+  text-align: center;
+}
+#contact-info h1 {
+  font-size: 40px;
+  padding-top: 40px;
+  text-align: center;
+}
 #contact-form .form-group {
+  margin-top: 20px;
   margin-bottom: 20px;
 }
-#contact-form h1 {
-  font-size: 40px;
-  padding-top: 10px;
+#contact-form img{
+  text-align: center;
 }
 #contact-form label {
   display: block;
