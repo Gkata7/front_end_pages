@@ -1,15 +1,10 @@
-/*** Scoping Colors ***/
+/**** Scoping Colors ****/
 :root {
   --primary-color: #1D428A;
   --secondary-color: #FFC72C;
   --lightgray-color: #f3f3f3;
   --teal-color: #006D75;
   --max-width: 1100px;
-  --other-color: #AA0000;
-}
-.category {
-  --professional-color: #006D75;
-  --college-color: #FFC72C;
   --other-color: #AA0000;
 }
 /*************************/
@@ -45,41 +40,114 @@ h1, h2, h3, h4, h5 {
   overflow: hidden;
   padding: 0 2rem;
 }
+.categories {
+  display: inline-block;
+  color: #fff;
+  font-size: .55rem;
+  text-transform: uppercase;
+  padding: 0.4rem 0.6rem;
+  border-radius: 15px;
+  margin-bottom: .5rem;
+}
+.categories-sports {
+  background: var(--other-color);
+}
+.categories-college {
+  background: var(--secondary-color);
+}
+.categories-other {
+  background: var(--other-color);
+}
+.btn {
+  display: inline-block;
+  border: none;
+  background: #333;
+  color: #fff;
+  padding: .5rem 1.3rem;
+  border-radius: .3rem;
+}
+.btn:hover {
+  opacity: 0.7;
+}
+.btn-block {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+.btn-light {
+  background: var(--lightgray-color);
+}
+.btn-primary {
+  background: var(--teal-color);
+}
+.btn-secondary {
+  background: var(--secondary-color);
+}
 /***** Nav Bar ****/
-.navbar {
+#navbar {
   background: #fff;
   position: sticky;
   top: 0;
   z-index: 2;
 }
-.navbar .container {
+#navbar .container {
   display: grid;
   grid-template-columns: 6fr 3fr 2fr;
   padding: 1rem;
   align-items: center;
 }
-.navbar .logo {
+#navbar .logo {
   width: 245px;
 }
-.navbar ul {
+#navbar ul {
   justify-self: end;
   display: flex;
 }
-.navbar ul li a {
+#navbar ul li a {
   padding: 0.75rem;
   font-weight: bold;
 }
-.navbar ul li a.current {
+#navbar ul li a.current {
   background: var(--other-color);
   color: #fff;
 }
-.navbar ul li a:hover {
+#navbar ul li a:hover {
   background: var(--lightgray-color);
   color: var(--primary-color);
 }
-.navbar .social-icons {
+#navbar .social-icons {
   justify-self: center;
 }
-.navbar .social-icons i {
+#navbar .social-icons i {
   margin-right: .6rem;
+}
+/******** Main Header ********/
+#main-header {
+  color: #fff;
+  background: #333;
+  padding: 2rem;
+  position: relative;
+}
+#main-header:before {
+  content: '';
+  background: url('../img/front-page.png') no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+}
+#main-header .header-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+#main-header .header-content {
+  z-index: 2;
+}
+#main-header .header-content p {
+  margin-bottom: 1rem;
 }
