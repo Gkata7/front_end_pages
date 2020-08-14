@@ -39,8 +39,8 @@ p {
 }
 /***** Reusable style *****/
 .container {
+  max-width: var(--max-width);
   margin: auto;
-  width: var(--max-width);
   overflow: hidden;
   padding: 0 2rem;
 }
@@ -176,7 +176,7 @@ p {
   justify-self: center;
 }
 #navbar .social-icons i {
-  margin-right: .6rem;
+  margin-right: .5rem;
 }
 /******** Main Header ********/
 #main-header {
@@ -270,7 +270,7 @@ p {
 }
 /*************** About.html *************/
 #about .container h1 {
-  font-size: 2rem;
+  font-size: 3rem;
   padding-bottom: .5rem;
 }
 #about .container img {
