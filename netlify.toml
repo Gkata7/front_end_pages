@@ -1,4 +1,0 @@
-[build]
-base = "sports_blog"
-publish = "sports_blog/dist/"
-command = "npm run build"
