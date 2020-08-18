@@ -1,0 +1,331 @@
+:root {
+  --primary-color: #240090;
+  --secondary-color: #0C0032;
+  --third-color: #3500D3;
+  --font-color: #fff;
+  --gray-color: #333;
+  --max-width: 1110px;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body, html {
+  font-family:'Roboto Slab', serif;
+  line-height: 1.5;
+  background: #fff;
+  color: var(--gray--color);
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: var(--font-color);
+}
+p {
+  margin: 10px 0;
+}
+img {
+  width: 100%;
+}
+h1, h2 {
+  line-height: 1.2;
+}
+/**** Re Usable Styling *****/
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+.btn {
+  background-color: var(--third-color);
+  padding: .8rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  display: inline-block;
+}
+.btn:hover {
+  opacity: 0.8;
+}
+.btn-primary {
+  background: var(--third-color);
+  color: #fff;
+}
+.btn-second {
+  border: 1px solid #fff;
+  color: var(--secondary-color);
+  background: #fff;
+}
+.flex-items {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.flex-items > div {
+  padding: 20px;
+}
+.background-dark {
+  background: var(--secondary-color);
+  color: #fff;
+}
+.background-light {
+  background: var(--font-color);
+  color: var(--secondary-color);
+}
+/****** Navbar ******/
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  opacity: 0.8;
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  top: 0;
+  padding: 0 30px;
+  background-color: var(--third-color);
+  color: #fff;
+  transition: 0.5s ease-in;
+}
+.navbar.top {
+  background: transparent;
+}
+.navbar ul {
+  display: flex;
+}
+.navbar a {
+  padding: 10px 20px;
+  margin: 0 5px;
+  font-weight: bold;
+}
+.navbar a:hover {
+  border-bottom: 2px solid #fff;
+}
+/******** Main Header *******/
+.hero {
+  background: url('../images/music-header.png') no-repeat right top/cover;
+  height: 100vh;
+  position: relative;
+  color: var(--font-color);
+}
+.hero .main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+}
+.hero .main-content h1 {
+  font-size: 3rem;
+}
+.hero .main-content p {
+  font-size: 1.5rem;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.hero * {
+  z-index: 10;
+}
+/********* Events Section **********/
+#events .event-items h1 {
+  padding-bottom: 50px;
+}
+.event-items {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 2rem;
+}
+.event-padding {
+  padding: 20px 20px 40px;
+}
+.flex-grid .row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+.flex-grid .column {
+  flex: 33.3%;
+  max-width: 33.3%;
+  height: 20%;
+  padding: 0 4px;
+}
+.event-padding .row .column h3{
+  font-size: 18px;
+  text-align: center;
+  color: #333;
+  font-weight: 100;
+}
+.event-padding .row .column p {
+  text-align: center;
+  color: var(--third-color);
+  font-weight: 800;
+  font-size: 16px;
+}
+/******* DJ/Flex Sections *******/
+.flex-columns.flex-reverse .row {
+  flex-direction: row-reverse;
+}
+.flex-columns .row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  background: var(--primary-color);
+  color: #fff;
+}
+.flex-columns .column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+.flex-columns .column .column-1,
+.flex-columns .column .column-2 {
+  height: 100%;
+}
+.flex-columns img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.flex-columns .column-2 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 30px;
+}
+.flex-columns .column-2 h3 {
+  font-size: 36px;
+  font-weight: 600;
+  text-align: center;
+}
+.flex-columns .column-2 p {
+  margin-bottom: 20px;
+  font-style: italic;
+}
+/******* Icons Section ******/
+.icons {
+  padding: 30px;
+  border-bottom: 1px solid #d4d4d4;
+}
+.icons h3 {
+  font-weight: 500;
+  margin-bottom: 15px;
+  font-size: 2rem;
+}
+.icons i {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 1rem;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+/***** Artists Section *****/
+.artists-header {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.artists-header h1 {
+  font-size: 3rem;
+  margin-bottom: 30px;
+  margin-top: 70px;
+}
+.flex-artists .row{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+.flex-artists .column {
+  flex: 50%;
+  width: 25%;
+  height: 25%;
+  padding: 0 4px;
+}
+/********* Footer **********/
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  height: 170px;
+}
+.footer a {
+  color: #fff;
+}
+.footer p {
+  margin-top: 30px;
+}
+.footer a:hover {
+  color: var(--third-color);
+}
+.footer .social > * {
+  margin-right: 30px;
+}
+/********* Artists.html ***********/
+.artist-header {
+  height: 40vh;
+  position: relative;
+  color: var(--primary-color);
+}
+.artist-header .main-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  height: 100%;
+}
+.artist-header .main-content h1 {
+  font-size: 4rem;
+  border-bottom: 1px solid #d4d4d4;
+}
+/*********** Contact.html *************/
+#contact-form .form-group {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.container h1 {
+  font-size: 2rem;
+  color: var(--third-color);
+  margin-bottom: 50px;
+}
+#contact-form label {
+  display: block;
+}
+#contact-form input,
+#contact-form textarea {
+  width: 100%;
+  padding: 15px;
+}
+#contact-form .btn-submit {
+  margin-bottom: 40px;
+  width: 20%;
+  color: #fff;
+}
+#contact-form input:focus,
+#contact-form textarea:focus {
+  outline: none;
+  border-color: var(--third-color);
+}
