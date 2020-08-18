@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/mobile.css">
+  <link rel="stylesheet" href="css/lightbox.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400&display=swap" rel="stylesheet">
   <title>October Records</title>
@@ -123,12 +124,20 @@
     </header>
     <div class="row">
       <div class="column">
-        <img src="./images/artists/artist1.png" alt="Artist 1">
-        <img src="./images/artists/artist2.png" alt="Artist 2">
+        <a href="./images/artists/artist1.png" data-lightbox="cases" data-title="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam, error.">
+          <img src="./images/artists/artist1.png" alt="Artist 1">
+        </a>
+        <a href="./images/artists/artist2.png" data-lightbox="cases" data-title="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam, error.">
+          <img src="./images/artists/artist2.png" alt="Artist 2">
+        </a>
       </div>
       <div class="column">
-        <img src="./images/artists/artist3.png" alt="Artist 3">
-        <img src="./images/artists/artist4.png" alt="Artist 4">
+        <a href="./images/artists/artist3.png" data-lightbox="cases" data-title="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam, error.">
+          <img src="./images/artists/artist3.png" alt="Artist 3">
+        </a>
+        <a href="./images/artists/artist4.png" data-lightbox="cases" data-title="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam, error.">
+          <img src="./images/artists/artist4.png" alt="Artist 1">
+        </a>
       </div>
     </div>
   </section>
@@ -146,6 +155,7 @@
   integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" 
   crossorigin="anonymous">
   </script>
+  <script src="js/lightbox.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>
