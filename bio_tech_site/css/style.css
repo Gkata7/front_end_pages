@@ -1,3 +1,9 @@
+html,body {
+  font-family: 'Poppins', sans-serif;
+}
+p {
+  font-size: 1.3rem;
+}
 .navbar .nav-link {
   font-size: 14px;
   padding: 0 1rem !important;
@@ -12,11 +18,25 @@
 .carousel-image-2 {
   background: url('../img/carousel2.png');
   background-size: cover;
+  background-position: center;
 }
 .carousel-image-3 {
   background: url('../img/carousel3.png');
   background-size: cover;
 }
-.carousel-item .slider2 {
-  color: var(--gray-dark);
+.carousel-item .carousel-caption .slider1 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.carousel-item .carousel-caption .slider2 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: #000;
+}
+.carousel-item .carousel-caption .header2 {
+  color: #000;
+}
+.carousel-item .carousel-caption .slider3 {
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
