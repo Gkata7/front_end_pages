@@ -77,3 +77,22 @@ p {
   color: var(--success);
   font-size: 1rem;
 }
+/* Video Section */
+#video-player {
+  position: relative;
+  min-height: 200px;
+  background: url('../img/clinicals.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  text-align: center;
+}
+#video-player .video-header {
+  padding-top: 20px;
+  color: var(--dark);
+}
+#video-player .fa-play {
+  background: #fff;
+  padding: 10px;
+  border-radius: 5px;
+}
