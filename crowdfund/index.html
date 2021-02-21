@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/mobile.css">
   <title>Frontend Mentor | Crowdfunding product page</title>
@@ -19,7 +19,6 @@
 <body>
 <!-- Navbar -->
   <header class="hero">
-    <!-- <div class="container"> -->
       <div id="navbar">
         <h1>
           Crowdfund
@@ -33,7 +32,6 @@
       <!-- Background Photo -->
       <div id="background-photo">
       </div>
-    <!-- </div> -->
   </header>
 <!-- Box Mastercraft -->
   <section id="mastercraft">
@@ -43,9 +41,10 @@
       </div>
       <h1>Mastercraft Bamboo Monitor Riser</h1>
       <p>A beautiful & handcrafted monitor stand to reduce neck and eye strain.</p>
-      <div class="master-button">
-        <button class="btn">Back this project</button> 
-        <img src="images/icon-bookmark.svg" alt="#"><p>Bookmark</p>
+      <div class="master-row">
+        <input type="button" class="btn" value="Back this project">
+        <img class="bookmark-icon" src="images/icon-bookmark.svg" alt="#">
+        <p class="bookmark">Bookmark</p>
       </div>
     </div>
   </section>
@@ -53,11 +52,11 @@
   <section id="box">
     <div class="container">
       <div class="numbers">
-        <ul class="list">
+        <ul id="side-line" class="list">
           <li><h2>$89,914</h2></li>
           <li><p>of $100,000 backed</p></li>
         </ul>
-        <ul class="list">
+        <ul id="side-line" class="list">
           <li><h2>5,007</h2></li>
           <li><p>total backers</p></li>
         </ul>
